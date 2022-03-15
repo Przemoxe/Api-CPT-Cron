@@ -10,5 +10,6 @@ Instruction:
     'Recurrence' set to: Once Daily(daily)
 4. You can choose 3 posts to show at the front page by edit Sample Page
 
+
     
     
