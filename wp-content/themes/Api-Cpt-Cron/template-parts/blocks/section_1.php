@@ -1,7 +1,4 @@
 <section>
-
-
-
 <?php
 
   /* Block Three Template */
@@ -24,7 +21,6 @@
     }
   }
 ?>       
-
 </section>
 
 

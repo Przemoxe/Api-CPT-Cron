@@ -1,13 +1,8 @@
 <?php
-/**
- * Template Name: auto add post
- *
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
- */
+
+
     class AllMyLittleProducts{
-    // 1. describe and create/initiate our object
+        //data
         public $api_url = 'https://picsum.photos/v2/list';
         public $json_data;
         public $json_decode;
@@ -17,8 +12,8 @@
         public $t_api = [];
         public $t_my = [];
         public $t_diffed = [];
-        
-    // 2. methods (function, action...)
+
+        // methods:
         public function __construct(){
             $this->json_data = file_get_contents($this->api_url);
             $this->json_decode = json_decode($this->json_data);
@@ -124,6 +119,6 @@
         }
     }
     // 3. events
-    // You must use it in plugin 'WP Crontrol':  
+    // You must use this class in plugin 'WP Crontrol':  
     
     
