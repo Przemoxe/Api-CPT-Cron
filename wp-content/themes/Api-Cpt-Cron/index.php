@@ -3,7 +3,7 @@
 get_header();
 
  ?>
-<h1>Hello World</h1>
+<h1>You can choose 3 posts by edit this page</h1>
 <br>
 <?php
 the_content();
