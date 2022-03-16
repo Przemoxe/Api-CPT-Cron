@@ -6,13 +6,13 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <header class="site-header">
+    <header>
         <?php 
 
         $menuHeader = wp_get_nav_menu_items('menu-1');
         foreach($menuHeader as $menu){
         ?>
-        <li class="scroll-to-section "><a href="<?= $menu->url?>"><?= $menu->title ?></a></li>
+        <li><a href="<?= $menu->url?>"><?= $menu->title ?></a></li>
         <?php
         }
 

@@ -2,7 +2,6 @@
 add_theme_support( 'post-thumbnails', array( 'post', 'api' ) );
 function create_api_posttype() {
 
-
 	register_post_type( 'api',
 		array(
 			'labels' => array(
@@ -28,8 +27,6 @@ add_action( 'init', 'add_scripts' );
 
 
 
-
-
 //Bloki/Sekcje gutenberg
 
 add_action('acf/init', 'my_acf_blocks_init');
@@ -51,7 +48,7 @@ function my_acf_blocks_init() {
 
 register_nav_menus(
   array(
-    'menu-1' => esc_html__( 'Header Menu Location', 'ideo' ),  
+    'menu-1' => esc_html__( 'Header Menu Location', 'Api-Cpt-Cron' ),  
   )
 );
 
